@@ -1,4 +1,10 @@
 import { Eye, Handshake, Lightbulb, Users } from "lucide-react";
+import AdidasLogo from "../assets/Adidas-Logo.png";
+import Attijari from "../assets/attijari.png";
+import CDG from "../assets/cdg.png";
+import Inwi from "../assets/inwi.png";
+import Societe from "../assets/sociéte.png";
+
 
 // Navigation Links
 export const navLinks = [
@@ -14,7 +20,7 @@ export const navLinks = [
 export type TValeurs = {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon?: JSX.Element;
 };
 
 export const Valeurs: TValeurs[] = [
@@ -22,25 +28,25 @@ export const Valeurs: TValeurs[] = [
     title: "Innovation",
     description:
       "Nous privilégions des solutions créatives et innovantes pour répondre aux besoins de nos clients.",
-    icon: <Lightbulb className="text-rose-500 w-12 h-12" />,
+    icon: <Lightbulb className="w-12 h-12 text-rose-500" />,
   },
   {
     title: "Engagement",
     description:
       "Nous nous engageons à fournir un service de qualité, toujours à l’écoute de vos besoins.",
-    icon: <Handshake className="text-rose-500 w-12 h-12" />,
+    icon: <Handshake className="w-12 h-12 text-rose-500" />,
   },
   {
     title: "Collaboration",
     description:
       "Le travail d’équipe est au cœur de notre démarche pour assurer le succès de chaque projet.",
-    icon: <Users className="text-rose-500 w-12 h-12" />,
+    icon: <Users className="w-12 h-12 text-rose-500" />,
   },
   {
     title: "Transparence",
     description:
       "Nous croyons en une communication claire et honnête avec nos clients à chaque étape du projet.",
-    icon: <Eye className="text-rose-500 w-12 h-12" />,
+    icon: <Eye className="w-12 h-12 text-rose-500" />,
   },
 ];
 export type Tservices = {
@@ -83,3 +89,21 @@ export const services : Tservices[] = [
     ],
   },
 ];
+export type TPartners = {
+  id: number;
+  name: string;
+  logo: string; 
+};
+
+export const partners: TPartners[] = [
+  { id: 1, name: "Adidas", logo: AdidasLogo },
+  { id: 2, name: "Société Générale", logo: Societe },
+  { id: 3, name: "Inwi", logo: Inwi },
+  { id: 4, name: "Attijari", logo: Attijari },
+  { id: 5, name: "CDG", logo: CDG },
+  { id: 6, name: "Adidas", logo: AdidasLogo },
+  { id: 7, name: "Société Générale", logo: Societe },
+  { id: 8, name: "Inwi", logo: Inwi },
+  { id: 9, name: "Inwi", logo: Inwi },
+
+]

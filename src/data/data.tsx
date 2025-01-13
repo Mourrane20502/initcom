@@ -105,5 +105,7 @@ export const partners: TPartners[] = [
   { id: 7, name: "Société Générale", logo: Societe },
   { id: 8, name: "Inwi", logo: Inwi },
   { id: 9, name: "Inwi", logo: Inwi },
+  { id: 10, name: "CDG", logo: CDG },
+
 
 ]

@@ -54,7 +54,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Contact Info */}
+            {/* Contact Informations */}
             <div>
               <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
               <ul className="space-y-2 text-sm">

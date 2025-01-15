@@ -11,9 +11,7 @@ export default function ValuesSection({ title, description, icon }: TValeurs) {
         {title}
       </h3>
 
-      <p className="text-base leading-relaxed text-gray-600">
-        {description}
-      </p>
+      <p className="text-base leading-relaxed text-gray-600">{description}</p>
     </div>
   );
 }

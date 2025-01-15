@@ -24,7 +24,7 @@ function App() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full gap-10 px-6 text-center">
-          <h1 className="mb-4 text-6xl font-extrabold tracking-wide text-rose-400 sm:text-7xl drop-shadow-lg animate-fade-in-down">
+          <h1 className="mb-4 text-6xl font-extrabold tracking-wide text-[#df2868] sm:text-7xl drop-shadow-lg animate-fade-in-down">
             InitCom
           </h1>
           <h2 className="text-2xl font-semibold tracking-wider text-white sm:text-3xl md:text-4xl animate-fade-in">
@@ -35,7 +35,7 @@ function App() {
             grâce à des stratégies numériques innovantes, une créativité unique
             et des solutions sur mesure pour atteindre vos objectifs.
           </p>
-          <button className="px-10 py-4 text-white transition-transform duration-300 rounded-full shadow-xl bg-gradient-to-r from-rose-500 to-red-600 hover:scale-110">
+          <button className="px-10 py-4 text-white transition-transform duration-300 rounded-full shadow-xl bg-[#dc2a6c] hover:scale-110">
             <a href="#contact"> Contactez-Nous</a>
           </button>
         </div>
@@ -87,11 +87,11 @@ function App() {
       {/*Nos Services */}
       <section
         id="services"
-        className="w-full px-6 py-20 bg-gradient-to-b from-white to-rose-100"
+        className="w-full px-6 py-20 bg-gradient-to-l from-white to-rose-300"
       >
         <div className="mx-auto max-w-7xl">
           {/* Section Title */}
-          <h2 className="mb-16 text-5xl font-extrabold text-center text-rose-600">
+          <h2 className="mb-16 text-5xl font-extrabold text-center text-[#df2868]">
             Nos Services
           </h2>
 
@@ -108,7 +108,7 @@ function App() {
 
       <section
         id="partenaires"
-        className="w-full py-16 overflow-hidden scroll-m-[70px] bg-gradient-to-r from-rose-200 to-white"
+        className="w-full py-16 mt-6 overflow-hidden scroll-m-[70px] bg-gradient-to-r from-rose-50 to-white"
       >
         <h2 className="mb-10 text-5xl font-extrabold text-center text-rose-600 drop-shadow-md">
           Nos Partenaires
@@ -148,7 +148,7 @@ function App() {
         <div className="grid items-center grid-cols-1 gap-12 mx-auto max-w-7xl lg:grid-cols-2">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <h2 className="mb-6 text-4xl font-extrabold text-rose-600">
+            <h2 className="mb-6 text-4xl font-extrabold text-[#df2868]">
               Contactez-Nous
             </h2>
             <p className="mb-8 text-lg text-gray-700">
@@ -161,8 +161,8 @@ function App() {
                 <span className="p-3 rounded-full shadow-md bg-rose-100 text-rose-600">
                   📍
                 </span>
-                <p className="text-lg">
-                  123 Rue de la Créativité, Casablanca , Maroc
+                <p className="text-lg max-md:text-[16px]">
+                  32 rue El Banafsaj , Rés Azzaitouna 1er Étage
                 </p>
               </div>
               <div className="flex items-center gap-4">
@@ -231,7 +231,7 @@ function App() {
               <button
                 onClick={() => successToast("Message Envoyé Avec succès!")}
                 type="submit"
-                className="px-6 py-3 text-white transition-transform duration-300 rounded-lg shadow-md bg-gradient-to-r from-rose-500 to-red-600 hover:scale-105"
+                className="px-6 py-3 text-white transition-transform duration-300 rounded-lg shadow-md bg-[#df2868] hover:scale-105"
               >
                 Envoyer
               </button>

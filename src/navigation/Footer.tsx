@@ -12,19 +12,24 @@ export default function Footer() {
       <div className="py-16">
         <div className="px-6 mx-auto max-w-7xl">
           {/* Top Section */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 ">
             {/* About */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-white">À Propos</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">
+                À Propos
+              </h3>
               <p className="text-sm leading-relaxed">
-                <span className="font-bold text-rose-400">INITCOM</span> est une agence de communication basée au Maroc,
-                spécialisée dans des solutions innovantes pour ses clients.
+                <span className="font-bold text-rose-400">INITCOM</span> est une
+                agence de communication basée au Maroc, spécialisée dans des
+                solutions innovantes pour ses clients.
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-white">Liens Rapides</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">
+                Liens Rapides
+              </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#qui-sommes-nous" className="hover:text-rose-400">
@@ -55,7 +60,7 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-rose-400">📍</span>
-                  123 Rue de la Créativité, Casablanca, Maroc
+                  32 rue El Banafsaj , Rés Azzaitouna 1er Étage
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-rose-400">📞</span>
@@ -70,7 +75,9 @@ export default function Footer() {
 
             {/* Social Media */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-white">Suivez-Nous</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">
+                Suivez-Nous
+              </h3>
               <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com"
@@ -78,8 +85,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-rose-400 hover:text-rose-300"
                 >
-                  <Facebook />                 
-
+                  <Facebook />
                 </a>
                 <a
                   href="https://www.facebook.com"
@@ -87,16 +93,16 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-rose-400 hover:text-rose-300"
                 >
-                    <Instagram /> 
+                  <Instagram />
                 </a>
-               
+
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-rose-400 hover:text-rose-300"
                 >
-                <Linkedin />
+                  <Linkedin />
                 </a>
               </div>
             </div>
@@ -107,8 +113,9 @@ export default function Footer() {
 
           {/* Bottom Section */}
           <div className="flex items-center justify-center text-sm f sm:flex-row">
-            <p>&copy; {new Date().getFullYear()} INITCOM. Tous droits réservés.</p>
-           
+            <p>
+              &copy; {new Date().getFullYear()} INITCOM. Tous droits réservés.
+            </p>
           </div>
         </div>
       </div>

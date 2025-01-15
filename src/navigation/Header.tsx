@@ -13,25 +13,20 @@ export default function Header() {
   };
 
   return (
-    <header
-      className=
-         "bg-white shadow-md text-gray-700  fixed top-0 left-0 right-0 z-20 transition-all duration-500 ease-in-out"
-    >
-      <nav className="flex items-center justify-around max-md:justify-between px-4 py-3 relative">
+    <header className="fixed top-0 left-0 right-0 z-20 text-gray-700 transition-all duration-500 ease-in-out bg-white shadow-md">
+      <nav className="relative flex items-center justify-around px-4 py-3 max-md:justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <img src={LogoInitCom} alt="Logo InitCom" width={120} />
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden space-x-6 md:flex">
           {navLinks.map((nav) => (
             <li key={nav.name} className="list-none">
               <a
                 href={nav.href}
-                className="text-lg text-gray-700 hover:text-rose-500 font-semibold transition-all duration-500 "
-                  
-                
+                className="text-lg text-gray-700 hover:text-[#df2868] font-semibold transition-all duration-500 "
               >
                 {nav.name}
               </a>
@@ -40,11 +35,20 @@ export default function Header() {
         </ul>
 
         {/* Mobile Menu Button */}
-        <div onClick={handleOpenState} className="md:hidden cursor-pointer z-20">
+        <div
+          onClick={handleOpenState}
+          className="z-20 cursor-pointer md:hidden"
+        >
           {isOpen ? (
-            <X size={35} className={`${isScrolling ? "text-white" : "text-black "}`} />
+            <X
+              size={35}
+              className={`${isScrolling ? "text-white" : "text-black "}`}
+            />
           ) : (
-            <Menu size={35} className={`${isScrolling ? "text-white" : "text-black"}`} />
+            <Menu
+              size={35}
+              className={`${isScrolling ? "text-white" : "text-black"}`}
+            />
           )}
         </div>
 
@@ -54,13 +58,13 @@ export default function Header() {
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out z-10`}
         >
-          <ul className="flex flex-col items-center   space-y-6 p-6">
+          <ul className="flex flex-col items-center p-6 space-y-6">
             {navLinks.map((nav) => (
               <li key={nav.name} className="list-none">
                 <a
                   href={nav.href}
-                  onClick={() => setIsOpen(false)} 
-                  className="text-gray-700 text-lg hover:text-rose-500 font-semibold transition-all duration-300"
+                  onClick={() => setIsOpen(false)}
+                  className="text-lg font-semibold text-gray-700 transition-all duration-300 hover:text-rose-500"
                 >
                   {nav.name}
                 </a>

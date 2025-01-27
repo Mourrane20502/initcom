@@ -28,7 +28,7 @@ function App() {
             InitCom
           </h1>
           <h2 className="text-2xl font-semibold tracking-wider text-white sm:text-3xl md:text-4xl animate-fade-in">
-            Votre Agence de Marketing Digital
+            Votre Agence 
           </h2>
           <p className="max-w-4xl mb-8 text-lg font-light leading-relaxed text-white md:text-xl drop-shadow-lg animate-fade-in">
             Nous aidons les entreprises à transformer leur présence en ligne

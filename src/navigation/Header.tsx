@@ -1,4 +1,5 @@
-import { Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion"; // Import Framer Motion
+import { Grid, Menu, X } from "lucide-react";
 import { useState } from "react";
 import LogoInitCom from "../assets/logoinit.png";
 import { navLinks } from "../data/data";
@@ -6,72 +7,111 @@ import useScroll from "../hooks/useScroll";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { isScrolling } = useScroll();
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
 
   const handleOpenState = () => {
     setIsOpen((prev) => !prev);
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-20 text-gray-700 transition-all duration-500 ease-in-out bg-white shadow-md">
-      <nav className="relative flex items-center justify-around px-4 py-3 max-md:justify-between">
+    <header className="fixed top-0 left-0 right-0 z-30 transition-all duration-500 ease-in-out bg-white shadow-md">
+      <nav className="relative flex items-center justify-between px-8 py-5">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={LogoInitCom} alt="Logo InitCom" width={120} />
+          <img src={LogoInitCom} alt="Logo InitCom" width={140} />
         </div>
 
-        {/* Desktop Navigation Links */}
-        <ul className="hidden space-x-6 md:flex">
-          {navLinks.map((nav) => (
-            <li key={nav.name} className="list-none">
-              <a
-                href={nav.href}
-                className="text-lg text-gray-700 hover:text-[#df2868] font-semibold transition-all duration-500 "
-              >
-                {nav.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <motion.div
+          className="hidden md:flex items-center justify-center w-16 h-16 bg-[#df2868] hover:bg-[#c0235d] text-white rounded-full shadow-lg cursor-pointer transition-all duration-500 transform hover:scale-110"
+          whileTap={{ scale: 0.9 }}
+          onClick={toggleDropdown}
+        >
+          <Grid size={40} />
+        </motion.div>
 
-        {/* Mobile Menu Button */}
+        <AnimatePresence>
+          {isDropdownOpen && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: -10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: -10 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="absolute px-8 py-6 bg-white shadow-2xl top-20 right-6 rounded-3xl w-80"
+            >
+              <ul className="flex flex-col items-center space-y-6">
+                {navLinks.map((nav) => (
+                  <motion.li
+                    key={nav.name}
+                    className="list-none"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href={nav.href}
+                      onClick={() => setIsDropdownOpen(false)}
+                      className="text-xl text-gray-800 font-semibold transition-all duration-300 hover:text-[#df2868]"
+                    >
+                      {nav.name}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <div
           onClick={handleOpenState}
           className="z-20 cursor-pointer md:hidden"
         >
           {isOpen ? (
             <X
-              size={35}
+              size={40}
               className={`${isScrolling ? "text-white" : "text-black "}`}
             />
           ) : (
             <Menu
-              size={35}
+              size={40}
               className={`${isScrolling ? "text-white" : "text-black"}`}
             />
           )}
         </div>
 
-        {/* Mobile Navigation Menu */}
-        <div
-          className={`absolute top-20 right-0 h-screen w-[60%] bg-white shadow-md transform ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out z-10`}
-        >
-          <ul className="flex flex-col items-center p-6 space-y-6">
-            {navLinks.map((nav) => (
-              <li key={nav.name} className="list-none">
-                <a
-                  href={nav.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg font-semibold text-gray-700 transition-all duration-300 hover:text-rose-500"
-                >
-                  {nav.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="absolute top-20 right-0 h-screen w-[75%] bg-white shadow-xl rounded-l-3xl z-20"
+            >
+              <ul className="flex flex-col items-center p-8 space-y-8">
+                {navLinks.map((nav) => (
+                  <motion.li
+                    key={nav.name}
+                    className="list-none"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a
+                      href={nav.href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-2xl font-semibold text-gray-800 transition-all duration-300 hover:text-[#df2868]"
+                    >
+                      {nav.name}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </header>
   );

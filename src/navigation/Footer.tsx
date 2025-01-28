@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import footerbg from "../assets/footerbg.jpg";
 
@@ -9,12 +10,29 @@ export default function Footer() {
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${footerbg})`,
       }}
     >
-      <div className="py-16">
+      <motion.div
+        className="py-16"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <div className="px-6 mx-auto max-w-7xl">
           {/* Top Section */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 ">
+          <motion.div
+            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ staggerChildren: 0.2 }}
+          >
             {/* About */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               <h3 className="mb-4 text-lg font-semibold text-white">
                 À Propos
               </h3>
@@ -23,10 +41,15 @@ export default function Footer() {
                 agence de communication basée au Maroc, spécialisée dans des
                 solutions innovantes pour ses clients.
               </p>
-            </div>
+            </motion.div>
 
             {/* Quick Links */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
               <h3 className="mb-4 text-lg font-semibold text-white">
                 Liens Rapides
               </h3>
@@ -52,29 +75,37 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
-            {/* Contact Informations */}
-            <div>
+            {/* Contact Information */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
               <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2">
-                  <span className="text-rose-400">📍</span>
-                  32 rue El Banafsaj , Rés Azzaitouna 1er Étage
+                  <span className="text-rose-400">📍</span> 32 rue El Banafsaj ,
+                  Rés Azzaitouna 1er Étage
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-rose-400">📞</span>
-                  +212 695592907
+                  <span className="text-rose-400">📞</span> +212 695592907
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-rose-400">✉️</span>
-                  contact@initcom.com
+                  <span className="text-rose-400">✉️</span> contact@initcom.com
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Social Media */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            >
               <h3 className="mb-4 text-lg font-semibold text-white">
                 Suivez-Nous
               </h3>
@@ -95,7 +126,6 @@ export default function Footer() {
                 >
                   <Instagram />
                 </a>
-
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
@@ -105,20 +135,32 @@ export default function Footer() {
                   <Linkedin />
                 </a>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Divider */}
-          <div className="my-8 border-t border-gray-700"></div>
+          <motion.div
+            className="my-8 border-t border-gray-700"
+            initial={{ opacity: 0, scaleX: 0 }}
+            whileInView={{ opacity: 1, scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          ></motion.div>
 
           {/* Bottom Section */}
-          <div className="flex items-center justify-center text-sm f sm:flex-row">
+          <motion.div
+            className="flex items-center justify-center text-sm sm:flex-row"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
+          >
             <p>
               &copy; {new Date().getFullYear()} INITCOM. Tous droits réservés.
             </p>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }

@@ -5,7 +5,6 @@ import CDG from "../assets/cdg.png";
 import Inwi from "../assets/inwi.png";
 import Societe from "../assets/sociéte.png";
 
-
 // Navigation Links
 export const navLinks = [
   { name: "Qui Sommes Nous", href: "#qui-sommes-nous" },
@@ -25,37 +24,34 @@ export type TValeurs = {
 
 export const Valeurs: TValeurs[] = [
   {
-    title: "Innovation",
-    description:
-      "Nous privilégions des solutions créatives et innovantes pour répondre aux besoins de nos clients.",
+    title: "Créativité ",
+    description: "Chaque projet est une opportunité de réinventer les codes.",
     icon: <Lightbulb className="w-12 h-12 text-rose-500" />,
   },
   {
-    title: "Engagement",
+    title: "Excellence ",
     description:
-      "Nous nous engageons à fournir un service de qualité, toujours à l’écoute de vos besoins.",
+      "Nous nous engageons à fournir un service de qualité supérieure.",
     icon: <Handshake className="w-12 h-12 text-rose-500" />,
   },
   {
-    title: "Collaboration",
-    description:
-      "Le travail d’équipe est au cœur de notre démarche pour assurer le succès de chaque projet.",
+    title: "Proximité ",
+    description: "Votre vision est au cœur de notre processus de création.",
     icon: <Users className="w-12 h-12 text-rose-500" />,
   },
   {
     title: "Transparence",
-    description:
-      "Nous croyons en une communication claire et honnête avec nos clients à chaque étape du projet.",
+    description: "Nous croyons en une communication claire et honnête.",
     icon: <Eye className="w-12 h-12 text-rose-500" />,
   },
 ];
 export type Tservices = {
-  title:string,
-  description : string,
-  points : string[]
-}
+  title: string;
+  description: string;
+  points: string[];
+};
 
-export const services : Tservices[] = [
+export const services: Tservices[] = [
   {
     title: "Marketing Événementiel",
     description:
@@ -77,7 +73,8 @@ export const services : Tservices[] = [
       "Promotions en points de vente : Offres spéciales, dégustations ou démonstrations de produits pour booster les ventes.",
       "Gestion de dispositifs de street marketing pour des campagnes impactantes dans les lieux publics.",
     ],
-  },  {
+  },
+  {
     title: "Retail Marketing",
     description:
       "Nous transformons vos points de vente en véritables expériences clients, en combinant design et stratégie commerciale.",
@@ -92,7 +89,7 @@ export const services : Tservices[] = [
 export type TPartners = {
   id: number;
   name: string;
-  logo: string; 
+  logo: string;
 };
 
 export const partners: TPartners[] = [
@@ -106,6 +103,4 @@ export const partners: TPartners[] = [
   { id: 8, name: "Inwi", logo: Inwi },
   { id: 9, name: "Inwi", logo: Inwi },
   { id: 10, name: "CDG", logo: CDG },
-
-
-]
+];

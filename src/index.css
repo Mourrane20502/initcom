@@ -7,10 +7,10 @@ html {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(100px);
   }
   100% {
-    transform: translateX(70%);
+    transform: translateX(-70%);
   }
 }
 

@@ -24,25 +24,25 @@ function App() {
   const categories = [
     {
       id: "evenements",
-      title: "🎤 Événements",
+      title: " Événements",
       image: realisation,
       images: [realisation, realisation2, realisation3, realisation4],
     },
     {
       id: "plv",
-      title: "🛒 PLV",
+      title: " PLV",
       image: realisation2,
       images: [realisation2, realisation, realisation3, realisation4],
     },
     {
       id: "stands",
-      title: "🏢 Stands",
+      title: " Stands",
       image: realisation3,
       images: [realisation3, realisation, realisation2, realisation4],
     },
     {
       id: "signaletique",
-      title: "📍 Signalétique",
+      title: " Signalétique",
       image: realisation4,
       images: [realisation4, realisation, realisation2, realisation3],
     },
@@ -180,117 +180,133 @@ function App() {
             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
           >
             <span className="font-bold text-rose-700">INITCOM </span>
-            est une agence de communication spécialisée en marketing
-            événementiel, opérationnel, retail marketing, trade marketing,
-            retail design et brand design. Nos équipes de créateurs et
-            d'artistes nous permettent de proposer un accompagnement 360 à nos
-            clients.
-          </motion.p>
-
-          <motion.p
-            className="text-lg leading-relaxed text-gray-700"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
-          >
-            Nous nous engageons à repousser les limites de la communication en
-            apportant à chaque projet une vision unique et avant-gardiste,
-            garantissant ainsi des résultats exceptionnels et une satisfaction
-            client optimale.
+            est une agence de communication qui évolue au cœur de l’industrie
+            publicitaire. Nous sommes spécialisés dans des domaines clés tels
+            que le marketing événementiel, le marketing opérationnel, le retail
+            marketing, le trade marketing, ainsi que le retail design et le
+            brand design. Notre mission est d’accompagner les marques dans la
+            création d’expériences mémorables et engageantes. De la conception
+            d’événements à la valorisation des espaces de vente, en passant par
+            des activations impactantes, nous mettons en œuvre des solutions sur
+            mesure qui renforcent la visibilité et la performance de nos clients
           </motion.p>
         </motion.div>
       </section>
 
       {/*About Us */}
-      <section id="about" className="w-full py-24 text-center bg-gray-100">
-        <motion.div
-          className="container max-w-6xl px-6 mx-auto"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <motion.h2
-            className="text-5xl font-extrabold text-[#df2868] mb-8"
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          >
-            À propos de nous
-          </motion.h2>
+      <section
+        id="about"
+        className="w-full py-24 bg-gradient-to-b from-[#f5f5f5] to-[#ffffff]"
+      >
+        <div className="container px-6 mx-auto max-w-7xl">
+          {/* Hero Section */}
+          <div className="mb-16 text-center">
+            <motion.h2
+              className="text-5xl font-extrabold text-[#df2868] mb-4"
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              À propos de nous
+            </motion.h2>
+            <motion.p
+              className="max-w-2xl mx-auto mb-8 text-xl text-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            >
+              Chez <strong>INITCOM</strong>, nous sommes plus qu'une agence :
+              nous devenons votre{" "}
+              <span className="text-[#dc2a6c] font-semibold">
+                partenaire stratégique
+              </span>
+              pour renforcer l’impact de votre communication visuelle.
+            </motion.p>
+          </div>
 
-          <motion.p
-            className="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-          >
-            Chez <strong>INITCOM</strong>, nous sommes bien plus qu’une société
-            opérant dans l’industrie publicitaire : nous sommes votre{" "}
-            <span className="text-[#dc2a6c] font-semibold">
-              partenaire stratégique
-            </span>{" "}
-            pour donner vie à vos idées et renforcer l’impact de votre
-            communication visuelle.
-          </motion.p>
-
-          <div className="grid items-start max-w-5xl gap-12 mx-auto mt-16 text-left md:grid-cols-2">
+          {/* Expertise and Mission Section */}
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+            {/* Expertise Block */}
             <motion.div
-              className="p-8 bg-white shadow-lg rounded-2xl"
+              className="p-8 bg-white shadow-xl rounded-xl"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
-              <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
-                🚀 Notre Expertise
-              </h3>
-              <p className="text-gray-700">
-                Depuis <strong>2019</strong>, nous mettons notre expertise au
-                service des marques pour créer des solutions publicitaires
-                uniques et efficaces, adaptées à leurs besoins et ambitions.
-              </p>
-              <ul className="mt-4 space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  ✅ <strong>Publicité sur lieu de vente (PLV)</strong> : pour
-                  capter l’attention là où les décisions d’achat se prennent.
+              <div className="mb-6">
+                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
+                  Notre Expertise
+                </h3>
+                <p className="text-lg text-gray-700">
+                  Depuis <strong>2019</strong>, nous créons des solutions
+                  publicitaires uniques et efficaces, adaptées aux besoins
+                  spécifiques de chaque marque.
+                </p>
+              </div>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <strong>Publicité sur lieu de vente (PLV)</strong> : attirer
+                  l’attention là où les décisions d’achat se prennent.
                 </li>
-                <li className="flex items-start gap-2">
-                  ✅ <strong>Stands et événements</strong> : pour des
-                  expériences immersives qui marquent les esprits.
+                <li className="flex items-start gap-3">
+                  <strong>Stands et événements</strong> : des expériences
+                  immersives qui marquent les esprits.
                 </li>
-                <li className="flex items-start gap-2">
-                  ✅ <strong>Signalétique et affichage</strong> : pour une
-                  visibilité optimale à chaque point de contact.
+                <li className="flex items-start gap-3">
+                  <strong>Signalétique et affichage</strong> : visibilité
+                  optimale à chaque point de contact.
                 </li>
               </ul>
             </motion.div>
 
+            {/* Mission Block */}
             <motion.div
-              className="p-8 bg-white shadow-lg rounded-2xl"
+              className="p-8 bg-white shadow-xl rounded-xl"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            >
+              <div className="mb-6">
+                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
+                  Notre Mission
+                </h3>
+                <p className="text-lg text-gray-700">
+                  Nous vous aidons à maximiser{" "}
+                  <span className="font-semibold text-[#dc2a6c]">
+                    l’impact de votre communication
+                  </span>{" "}
+                  et à établir une relation solide entre votre marque et votre
+                  audience.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Values Block */}
+            <motion.div
+              className="p-8 bg-white shadow-xl rounded-xl"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
             >
-              <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
-                🎯 Notre Mission
-              </h3>
-              <p className="text-gray-700">
-                Nous vous aidons à maximiser{" "}
-                <span className="font-semibold text-[#dc2a6c]">
-                  l’impact de votre communication
-                </span>{" "}
-                et à établir un lien fort entre votre marque et votre audience.
-              </p>
+              <div className="mb-6">
+                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
+                  Nos Valeurs
+                </h3>
+                <p className="text-lg text-gray-700">
+                  Nous croyons en la collaboration, l’innovation, et la création
+                  de solutions sur mesure qui correspondent aux besoins
+                  spécifiques de chaque client.
+                </p>
+              </div>
             </motion.div>
           </div>
-        </motion.div>
+        </div>
       </section>
-
       {/*Nos Valeurs */}
       <section className="w-full px-3 py-10">
         <motion.div

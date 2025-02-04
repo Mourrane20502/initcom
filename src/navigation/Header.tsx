@@ -67,7 +67,7 @@ export default function Header() {
 
         <div
           onClick={handleOpenState}
-          className="z-20 cursor-pointer md:hidden"
+          className="z-50 cursor-pointer md:hidden"
         >
           {isOpen ? (
             <X

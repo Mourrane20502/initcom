@@ -1,15 +1,9 @@
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
 import { ToastContainer } from "react-toastify";
-
 import AgencyPhoto from "./assets/agency.jpg";
 import LeftSidePicture from "./assets/agencybg.avif";
 import equipe from "./assets/equipe.png";
-import realisation from "./assets/realisation.jpg";
-import realisation2 from "./assets/realisation2.jpg";
-import realisation3 from "./assets/realisation3.jpg";
-import realisation4 from "./assets/realisation4.jpg";
+import RealisationsSection from "./components/RealisationsSection";
 import ServicesSection from "./components/ServicesSection";
 import ValuesSection from "./components/ValuesSection";
 import { partners, services, Valeurs } from "./data/data";
@@ -18,63 +12,7 @@ import Footer from "./navigation/Footer";
 import Header from "./navigation/Header";
 function App() {
   const { successToast } = useToast();
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const categories = [
-    {
-      id: "evenements",
-      title: " Événements",
-      image: realisation,
-      images: [realisation, realisation2, realisation3, realisation4],
-    },
-    {
-      id: "plv",
-      title: " PLV",
-      image: realisation2,
-      images: [realisation2, realisation, realisation3, realisation4],
-    },
-    {
-      id: "stands",
-      title: " Stands",
-      image: realisation3,
-      images: [realisation3, realisation, realisation2, realisation4],
-    },
-    {
-      id: "signaletique",
-      title: " Signalétique",
-      image: realisation4,
-      images: [realisation4, realisation, realisation2, realisation3],
-    },
-  ];
-  const openModal = (categoryId: string) => {
-    setSelectedCategory(categoryId);
-    setSelectedImageIndex(0);
-    setIsModalOpen(true);
-  };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedCategory(null);
-  };
-
-  const nextImage = () => {
-    if (selectedCategory) {
-      const images =
-        categories.find((cat) => cat.id === selectedCategory)?.images || [];
-      setSelectedImageIndex((prev) => (prev + 1) % images.length);
-    }
-  };
-
-  const prevImage = () => {
-    if (selectedCategory) {
-      const images =
-        categories.find((cat) => cat.id === selectedCategory)?.images || [];
-      setSelectedImageIndex(
-        (prev) => (prev - 1 + images.length) % images.length
-      );
-    }
-  };
   return (
     <div className="scroll-smooth">
       <Header />
@@ -202,7 +140,7 @@ function App() {
           {/* Hero Section */}
           <div className="mb-16 text-center">
             <motion.h2
-              className="text-5xl font-extrabold text-[#df2868] mb-4"
+              className="text-6xl font-extrabold text-[#df2868] mb-4"
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -211,7 +149,7 @@ function App() {
               À propos de nous
             </motion.h2>
             <motion.p
-              className="max-w-2xl mx-auto mb-8 text-xl text-gray-700"
+              className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-gray-700"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -221,7 +159,7 @@ function App() {
               nous devenons votre{" "}
               <span className="text-[#dc2a6c] font-semibold">
                 partenaire stratégique
-              </span>
+              </span>{" "}
               pour renforcer l’impact de votre communication visuelle.
             </motion.p>
           </div>
@@ -230,22 +168,20 @@ function App() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
             {/* Expertise Block */}
             <motion.div
-              className="p-8 bg-white shadow-xl rounded-xl"
+              className="p-8 transition-shadow duration-300 bg-white shadow-xl rounded-xl hover:shadow-2xl"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
-              <div className="mb-6">
-                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
-                  Notre Expertise
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Depuis <strong>2019</strong>, nous créons des solutions
-                  publicitaires uniques et efficaces, adaptées aux besoins
-                  spécifiques de chaque marque.
-                </p>
-              </div>
+              <h3 className="text-3xl font-semibold text-[#df2868] mb-6">
+                Notre Expertise
+              </h3>
+              <p className="mb-6 text-lg text-gray-700">
+                Depuis <strong>2019</strong>, nous créons des solutions
+                publicitaires uniques et efficaces, adaptées aux besoins
+                spécifiques de chaque marque.
+              </p>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <strong>Publicité sur lieu de vente (PLV)</strong> : attirer
@@ -264,49 +200,46 @@ function App() {
 
             {/* Mission Block */}
             <motion.div
-              className="p-8 bg-white shadow-xl rounded-xl"
+              className="p-8 transition-shadow duration-300 bg-white shadow-xl rounded-xl hover:shadow-2xl"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              <div className="mb-6">
-                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
-                  Notre Mission
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Nous vous aidons à maximiser{" "}
-                  <span className="font-semibold text-[#dc2a6c]">
-                    l’impact de votre communication
-                  </span>{" "}
-                  et à établir une relation solide entre votre marque et votre
-                  audience.
-                </p>
-              </div>
+              <h3 className="text-3xl font-semibold text-[#df2868] mb-6">
+                Notre Mission
+              </h3>
+              <p className="mb-6 text-lg text-gray-700">
+                Nous vous aidons à maximiser{" "}
+                <span className="font-semibold text-[#dc2a6c]">
+                  l’impact de votre communication
+                </span>{" "}
+                et à établir une relation solide entre votre marque et votre
+                audience.
+              </p>
             </motion.div>
 
             {/* Values Block */}
             <motion.div
-              className="p-8 bg-white shadow-xl rounded-xl"
+              className="p-8 transition-shadow duration-300 bg-white shadow-xl rounded-xl hover:shadow-2xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
             >
-              <div className="mb-6">
-                <h3 className="text-3xl font-semibold text-[#df2868] mb-4">
-                  Nos Valeurs
-                </h3>
-                <p className="text-lg text-gray-700">
-                  Nous croyons en la collaboration, l’innovation, et la création
-                  de solutions sur mesure qui correspondent aux besoins
-                  spécifiques de chaque client.
-                </p>
-              </div>
+              <h3 className="text-3xl font-semibold text-[#df2868] mb-6">
+                Nos Valeurs
+              </h3>
+              <p className="mb-6 text-lg text-gray-700">
+                Nous croyons en la collaboration, l’innovation, et la création
+                de solutions sur mesure qui correspondent aux besoins
+                spécifiques de chaque client.
+              </p>
             </motion.div>
           </div>
         </div>
       </section>
+
       {/*Nos Valeurs */}
       <section className="w-full px-3 py-10">
         <motion.div
@@ -337,7 +270,7 @@ function App() {
       </section>
 
       {/*Nos Réalisations */}
-      <section id="realisations" className="w-full py-24 text-center bg-white">
+      {/* <section id="realisations" className="w-full py-24 text-center bg-white">
         <motion.div
           className="container max-w-6xl px-6 mx-auto"
           initial={{ opacity: 0, y: 50 }}
@@ -453,7 +386,8 @@ function App() {
             </button>
           </motion.div>
         )}
-      </section>
+      </section> */}
+      <RealisationsSection />
 
       {/*Nos Services */}
       <section

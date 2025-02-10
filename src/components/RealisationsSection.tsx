@@ -97,6 +97,10 @@ export default function RealisationsSection() {
 
   const handleVoirMoinsClick = () => {
     setItemsToShow((prev) => (prev > 3 ? prev - 3 : prev));
+    const section = document.getElementById("realisations");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (

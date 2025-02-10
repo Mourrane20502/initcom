@@ -14,7 +14,7 @@ function App() {
   const { successToast } = useToast();
 
   return (
-    <div className="scroll-smooth">
+    <div className="overflow-hidden scroll-smooth">
       <Header />
       <section
         className="w-full fromLeft h-[800px] relative bg-cover bg-center"

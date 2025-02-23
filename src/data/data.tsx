@@ -1,11 +1,11 @@
 import { Eye, Handshake, Lightbulb, Users } from "lucide-react";
 import AdidasLogo from "../assets/Adidas-Logo.png";
-import adidas from "../assets/adidas.jpeg";
-import adidas2 from "../assets/adidas2.jpeg";
-import adidas3 from "../assets/adidas3.jpeg";
-import adidas4 from "../assets/adidas4.jpeg";
-import adidas5 from "../assets/adidas5.jpeg";
-import adidas6 from "../assets/adidas6.jpeg";
+// import adidas from "../assets/adidas.jpeg";
+// import adidas2 from "../assets/adidas2.jpeg";
+// import adidas3 from "../assets/adidas3.jpeg";
+// import adidas4 from "../assets/adidas4.jpeg";
+// import adidas5 from "../assets/adidas5.jpeg";
+// import adidas6 from "../assets/adidas6.jpeg";
 import amenagement from "../assets/aménagement_creatif_1.jpeg";
 import amenagement2 from "../assets/aménagement_creatif_2.jpeg";
 import amenagement3 from "../assets/aménagement_creatif_3.jpeg";
@@ -14,10 +14,17 @@ import amenagement5 from "../assets/aménagement_creatif_5.jpeg";
 import amenagement6 from "../assets/aménagement_creatif_6.jpeg";
 import amenagement7 from "../assets/aménagement_creatif_7.jpeg";
 import Attijari from "../assets/attijari.png";
-import bmci1 from "../assets/bmci1.jpeg";
-import bmci2 from "../assets/bmci2.jpeg";
-import bmci3 from "../assets/bmci3.jpeg";
-import bmci4 from "../assets/bmci4.jpeg";
+// import bmci1 from "../assets/bmci1.jpeg";
+// import bmci2 from "../assets/bmci2.jpeg";
+// import bmci3 from "../assets/bmci3.jpeg";
+// import bmci4 from "../assets/bmci4.jpeg";
+import adidasRetails from "../assets/adidasretail1.jpeg";
+import adidasRetails2 from "../assets/adidasretail2.jpeg";
+import adidasRetails3 from "../assets/adidasretail3.jpeg";
+import adidasRetails4 from "../assets/adidasretail4.jpeg";
+import adidasRetails5 from "../assets/adidasretail5.jpeg";
+import adidasRetails6 from "../assets/adidasretail6.jpeg";
+import adidasRetails7 from "../assets/adidasretail7.jpeg";
 import carrefour from "../assets/carrefour1.jpeg";
 import carrefour2 from "../assets/carrefour2.jpeg";
 import carrefour3 from "../assets/carrefour3.jpeg";
@@ -29,16 +36,26 @@ import devoxx2 from "../assets/devox2.jpeg";
 import devoxx3 from "../assets/devox3.jpeg";
 import devoxx4 from "../assets/devox4.jpeg";
 import devoxx5 from "../assets/devox5.jpeg";
+import eventinwi from "../assets/eventinwi1.jpeg";
+import eventinwi2 from "../assets/eventinwi2.jpeg";
+import eventinwi3 from "../assets/eventinwi3.jpeg";
+import eventinwi4 from "../assets/eventinwi4.jpeg";
+import eventinwi5 from "../assets/eventinwi5.jpeg";
 import forum from "../assets/forum_geni.jpeg";
 import forum2 from "../assets/forum_geni2.jpeg";
+import glassauto from "../assets/glassauto.jpg";
+import glassauto2 from "../assets/glassauto2.jpg";
 import Inwi from "../assets/inwi.png";
-import inwi1 from "../assets/inwi1.jpeg";
-import inwi2 from "../assets/inwi2.jpeg";
-import inwi3 from "../assets/inwi3.jpeg";
-import inwi4 from "../assets/inwi4.jpeg";
-import inwi5 from "../assets/inwi5.jpeg";
-import inwi6 from "../assets/inwi6.jpeg";
-import inwi7 from "../assets/inwi7.jpeg";
+// import inwi1 from "../assets/inwi1.jpeg";
+// import inwi2 from "../assets/inwi2.jpeg";
+// import inwi3 from "../assets/inwi3.jpeg";
+// import inwi4 from "../assets/inwi4.jpeg";
+// import inwi5 from "../assets/inwi5.jpeg";
+// import inwi6 from "../assets/inwi6.jpeg";
+// import inwi7 from "../assets/inwi7.jpeg";
+import inwiMoney from "../assets/inwimoney.jpeg";
+import inwiMoney2 from "../assets/inwimoney2.jpeg";
+import inwiMoney3 from "../assets/inwimoney3.jpeg";
 import lhFashion from "../assets/LH_FASHION_1.jpeg";
 import lhFashion2 from "../assets/LH_FASHION_2.jpeg";
 import lhFashion3 from "../assets/LH_FASHION_3.jpeg";
@@ -49,14 +66,24 @@ import marrakech3 from "../assets/marrakech3.jpeg";
 import marrakech4 from "../assets/marrakech4.jpeg";
 import marrakech5 from "../assets/marrakech5.jpeg";
 import marrakech6 from "../assets/marrakech6.jpeg";
-import image from "../assets/realisation2.jpg";
+import pandora from "../assets/pandora.jpeg";
+import pandora2 from "../assets/pandora2.jpeg";
+import pandora3 from "../assets/pandora3.jpeg";
+import pandora4 from "../assets/pandora4.jpeg";
+import pandora5 from "../assets/pandora5.jpeg";
+import pandora6 from "../assets/pandora6.jpeg";
+// import image from "../assets/realisation2.jpg";
+import reebok from "../assets/reebok1.jpeg";
+import reebok2 from "../assets/reebok2.jpeg";
+import reebok3 from "../assets/reebok3.jpeg";
+import reebok4 from "../assets/reebok4.jpeg";
+import reebok5 from "../assets/reebok5.jpeg";
+import reebok6 from "../assets/reebok6.jpeg";
+import reebok7 from "../assets/reebok7.jpeg";
 import sg1 from "../assets/sg_1.jpeg";
 import sg2 from "../assets/sg_2.jpeg";
 import sg3 from "../assets/sg_3.jpeg";
 import sg4 from "../assets/sg_4.jpeg";
-import sg5 from "../assets/sg_5.jpeg";
-import sg6 from "../assets/sg_6.jpeg";
-import sg7 from "../assets/sg_7.jpeg";
 import signaletique1 from "../assets/signaletique1.jpeg";
 import signaletique2 from "../assets/signaletique2.jpeg";
 import societe from "../assets/sociéte.jpeg";
@@ -85,76 +112,28 @@ export const categories = {
   evenements: [
     {
       id: 1,
-      title: "Inwi Forfait Flexi 2025",
-      description:
-        "Nous sommes fiers d'avoir accompagné Inwi dans l'organisation de cet événement exceptionnel pour le lancement du Forfait Flexi le 15/01/2025 , une belle réussite grâce à une collaboration dynamique et un travail d'équipe remarquable.",
-      image: adidas,
-      additionalImages: [adidas, adidas2, adidas3, adidas4, adidas5, adidas6],
-    },
-    {
-      id: 2,
-      title: "Société Générale Africa Technologies & Services",
-      description:
-        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées qui marient esthétisme et fonctionnalité.",
-      image: sg1,
-      additionalImages: [sg1, sg2, sg3, sg4, sg5, sg6, sg7],
-    },
-    {
-      id: 3,
-      title: "Société Générale Africa Technologies & Services",
-      description:
-        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées qui marient esthétisme et fonctionnalité.",
-      image: bmci1,
-      additionalImages: [bmci1, bmci2, bmci3, bmci4],
-    },
-    {
-      id: 4,
-      title: "Carrefour du Manager 2024",
-      description:
-        "Pour cette nouvelle édition du Carrefour du Manager, nous avons eu le privilège de créer un espace dédié à l’innovation et au partage d’idées. Nous avons conçu et aménagé des stands alliant design et fonctionnalités pour accueillir les participants dans une ambiance dynamique et propice aux échanges professionnels. ",
-      image: carrefour,
-      additionalImages: [
-        carrefour,
-        carrefour2,
-        carrefour3,
-        carrefour4,
-        carrefour5,
-      ],
-    },
-
-    {
-      id: 4,
-      title: "Spelling Bee à Anfaplace",
-      description:
-        "InitCom a eu le plaisir d'organiser la 4e édition du concours Spelling Bee à Anfaplace ! Pour cet événement unique, notre équipe a assuré un branding  complet avec  un setup créatif ,une animation dynamique et  une logistique événementielle soignée, un grand moment pour les participants et le public !",
-      image: anfaplace,
-      additionalImages: [
-        anfaplace,
-        anfaplace2,
-        anfaplace3,
-        anfaplace4,
-        anfaplace5,
-        anfaplace6,
-      ],
-    },
-  ],
-  plv: [
-    {
-      id: 1,
       title: "Inwi Forfait Flexi",
       description:
         "Nous sommes fiers d'avoir accompagné Inwi dans l'organisation de cet événement exceptionnel pour le lancement du Forfait Flexi le 15/01/2025 ,une belle réussite grâce à une collaboration dynamique et un travail d'équipe remarquable.",
-      image: inwi1,
-      additionalImages: [inwi1, inwi2, inwi3, inwi4, inwi5, inwi6, inwi7],
+      image: eventinwi,
+      additionalImages: [
+        eventinwi,
+        eventinwi2,
+        eventinwi3,
+        eventinwi4,
+        eventinwi5,
+      ],
     },
     {
       id: 2,
-      title: "PLV 2",
-      description: "Description of PLV 2",
-      image,
-      additionalImages: [image, image],
+      title: "Société Générale Africa Technologies & Services",
+      description:
+        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées.",
+      image: sg1,
+      additionalImages: [sg1, sg2, sg3, sg4],
     },
   ],
+  plv: [],
   stands: [
     {
       id: 1,
@@ -240,6 +219,14 @@ export const categories = {
       image: devoxx,
       additionalImages: [devoxx, devoxx2, devoxx3, devoxx4, devoxx5],
     },
+    {
+      id: 8,
+      title: "GLASSAUTO",
+      description:
+        "Nous avons eu le plaisir de participer à la conférence Devoxx Morocco 2024, qui s'est déroulé du 02 au 04 octobre à Marrakech.  En tant que partenaire en branding . Notre équipe Initcom a pris en charge plusieurs aspects essentiels de l'événement, notamment :  La création et mise en place de setup ,la conception et aménagement des stands , la scénographie de l'événement et  la logistique complète.",
+      image: glassauto,
+      additionalImages: [glassauto, glassauto2],
+    },
   ],
   signaletique: [
     {
@@ -252,19 +239,74 @@ export const categories = {
     },
     {
       id: 2,
-      title: "Signalétique 2",
+      title: "Inwi Money",
       description: "Description of Signalétique 2",
-      image,
-      additionalImages: [image, image],
+      image: inwiMoney,
+      additionalImages: [inwiMoney, inwiMoney2, inwiMoney3],
     },
   ],
   Retails: [
     {
       id: 1,
-      title: "Signalétique 1",
+      title: "ADIDAS - CAMPAGNE PREDATOR",
       description: "Description of Signalétique 1",
-      image,
-      additionalImages: [image, image],
+      image: adidasRetails,
+      additionalImages: [
+        adidasRetails,
+        adidasRetails2,
+        adidasRetails3,
+        adidasRetails4,
+        adidasRetails5,
+        adidasRetails6,
+        adidasRetails7,
+      ],
+    },
+    {
+      id: 2,
+      title: "Pandora",
+      description:
+        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées qui marient esthétisme et fonctionnalité.",
+      image: pandora,
+      additionalImages: [
+        pandora,
+        pandora2,
+        pandora3,
+        pandora4,
+        pandora5,
+        pandora6,
+      ],
+    },
+    {
+      id: 3,
+      title: "REEBOK",
+      description:
+        "Pour cette nouvelle édition du Carrefour du Manager, nous avons eu le privilège de créer un espace dédié à l’innovation et au partage d’idées. Nous avons conçu et aménagé des stands alliant design et fonctionnalités pour accueillir les participants dans une ambiance dynamique et propice aux échanges professionnels. ",
+      image: reebok,
+      additionalImages: [
+        reebok,
+        reebok2,
+        reebok3,
+        reebok4,
+        reebok5,
+        reebok6,
+        reebok7,
+      ],
+    },
+
+    {
+      id: 4,
+      title: "Spelling Bee à Anfaplace",
+      description:
+        "InitCom a eu le plaisir d'organiser la 4e édition du concours Spelling Bee à Anfaplace ! Pour cet événement unique, notre équipe a assuré un branding  complet avec  un setup créatif ,une animation dynamique et  une logistique événementielle soignée, un grand moment pour les participants et le public !",
+      image: anfaplace,
+      additionalImages: [
+        anfaplace,
+        anfaplace2,
+        anfaplace3,
+        anfaplace4,
+        anfaplace5,
+        anfaplace6,
+      ],
     },
   ],
 };

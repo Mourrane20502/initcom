@@ -132,6 +132,21 @@ export const categories = {
       image: sg1,
       additionalImages: [sg1, sg2, sg3, sg4],
     },
+    {
+      id: 3,
+      title: "Marrakech Air Show 2024,",
+      description:
+        "InitCom a installé des dispositifs de visibilité pour Embraer  au Marrakech Air Show 2024, qui se tient du 30 octobre au 2 novembre, un événement incontournable pour le secteur aéronautique, réunissant plus de 300 exposants et des délégations internationales.",
+      image: marrakech,
+      additionalImages: [
+        marrakech,
+        marrakech2,
+        marrakech3,
+        marrakech4,
+        marrakech5,
+        marrakech6,
+      ],
+    },
   ],
   plv: [],
   stands: [
@@ -150,24 +165,9 @@ export const categories = {
         societe6,
       ],
     },
+
     {
       id: 2,
-      title: "Aménagement créatif pour Adidas",
-      description:
-        "Il y a quelque temps, nous avons eu l'opportunité de travailler sur un projet d'aménagement d'espace pour Adidas, en apportant une touche de créativité et d'innovation à leur environnement.",
-      image: amenagement,
-      additionalImages: [
-        amenagement,
-        amenagement2,
-        amenagement3,
-        amenagement4,
-        amenagement5,
-        amenagement6,
-        amenagement7,
-      ],
-    },
-    {
-      id: 3,
       title: "LH Fashion Show",
       description:
         "Organisé par la célèbre créatrice marocaine Leïla Hadioui, cet événement incontournable s’est tenu au Pavillon Othali à Casablanca sous le thème « ROUND ELEVEN ». À cette occasion, nous avons imaginé un espace instagramable et immersif, en parfaite harmonie avec la collection capsule sport réalisée en collaboration avec la marque internationale Adidas.",
@@ -175,7 +175,7 @@ export const categories = {
       additionalImages: [lhFashion, lhFashion2, lhFashion3, lhFashion4],
     },
     {
-      id: 4,
+      id: 3,
       title: "Congrès National de Cardiologie ",
       description:
         "Initcom a eu le plaisir de concevoir et d'installer un stand sur-mesure pour BMCI, offrant un espace accueillant et moderne aux visiteurs , avec une attention particulière aux détails, ce stand reflétait l'engagement de BMCI envers le bien-être et la santé. Un grand merci à BMCI pour leur confiance, et à notre équipe pour leur créativité et leur professionnalisme dans la réalisation de ce projet.",
@@ -189,22 +189,7 @@ export const categories = {
       ],
     },
     {
-      id: 5,
-      title: "Marrakech Air Show 2024,",
-      description:
-        "InitCom a installé des dispositifs de visibilité pour Embraer  au Marrakech Air Show 2024, qui se tient du 30 octobre au 2 novembre, un événement incontournable pour le secteur aéronautique, réunissant plus de 300 exposants et des délégations internationales.",
-      image: marrakech,
-      additionalImages: [
-        marrakech,
-        marrakech2,
-        marrakech3,
-        marrakech4,
-        marrakech5,
-        marrakech6,
-      ],
-    },
-    {
-      id: 6,
+      id: 4,
       title: "Forum GENI Entreprises à Rabat",
       description:
         "Nous avons eu le plaisir de concevoir et mettre en place le stand d'INWI lors du Forum GENI Entreprises à Rabat. organisé par l'ENSIAS, l'INPT et l'INSEA. Cet événement a offert une belle opportunité de networking pour les étudiants et les professionnels.",
@@ -212,7 +197,7 @@ export const categories = {
       additionalImages: [forum, forum2],
     },
     {
-      id: 7,
+      id: 5,
       title: "Conférence Devoxx Morocco 2024",
       description:
         "Nous avons eu le plaisir de participer à la conférence Devoxx Morocco 2024, qui s'est déroulé du 02 au 04 octobre à Marrakech.  En tant que partenaire en branding . Notre équipe Initcom a pris en charge plusieurs aspects essentiels de l'événement, notamment :  La création et mise en place de setup ,la conception et aménagement des stands , la scénographie de l'événement et  la logistique complète.",
@@ -220,7 +205,7 @@ export const categories = {
       additionalImages: [devoxx, devoxx2, devoxx3, devoxx4, devoxx5],
     },
     {
-      id: 8,
+      id: 6,
       title: "GLASSAUTO",
       description:
         "Nous avons eu le plaisir de participer à la conférence Devoxx Morocco 2024, qui s'est déroulé du 02 au 04 octobre à Marrakech.  En tant que partenaire en branding . Notre équipe Initcom a pris en charge plusieurs aspects essentiels de l'événement, notamment :  La création et mise en place de setup ,la conception et aménagement des stands , la scénographie de l'événement et  la logistique complète.",
@@ -306,6 +291,22 @@ export const categories = {
         anfaplace4,
         anfaplace5,
         anfaplace6,
+      ],
+    },
+    {
+      id: 5,
+      title: "Aménagement créatif pour Adidas",
+      description:
+        "Il y a quelque temps, nous avons eu l'opportunité de travailler sur un projet d'aménagement d'espace pour Adidas, en apportant une touche de créativité et d'innovation à leur environnement.",
+      image: amenagement,
+      additionalImages: [
+        amenagement,
+        amenagement2,
+        amenagement3,
+        amenagement4,
+        amenagement5,
+        amenagement6,
+        amenagement7,
       ],
     },
   ],

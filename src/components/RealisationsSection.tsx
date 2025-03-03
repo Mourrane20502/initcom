@@ -38,6 +38,13 @@ type Categories = {
     image: string;
     additionalImages: string[];
   }[];
+  Animations: {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    additionalImages: string[];
+  }[];
 };
 
 export default function RealisationsSection() {
@@ -132,23 +139,26 @@ export default function RealisationsSection() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {["evenements", "plv", "stands", "signaletique", "Retails"].map(
-            (category) => (
-              <button
-                key={category}
-                onClick={() =>
-                  handleCategoryClick(category as keyof Categories)
-                }
-                className={`px-6 py-2 text-lg font-semibold transition-all duration-300 ${
-                  activeCategory === category
-                    ? "bg-[#df2868] text-white"
-                    : "bg-gray-200 text-gray-700"
-                } rounded-lg`}
-              >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            )
-          )}
+          {[
+            "evenements",
+            "plv",
+            "stands",
+            "signaletique",
+            "Retails",
+            "Animations",
+          ].map((category) => (
+            <button
+              key={category}
+              onClick={() => handleCategoryClick(category as keyof Categories)}
+              className={`px-6 py-2 text-lg font-semibold transition-all duration-300 ${
+                activeCategory === category
+                  ? "bg-[#df2868] text-white"
+                  : "bg-gray-200 text-gray-700"
+              } rounded-lg`}
+            >
+              {category.charAt(0).toUpperCase() + category.slice(1)}
+            </button>
+          ))}
         </div>
 
         {/* Category Content Display */}

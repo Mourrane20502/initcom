@@ -13,7 +13,6 @@ import amenagement4 from "../assets/aménagement_creatif_4.jpeg";
 import amenagement5 from "../assets/aménagement_creatif_5.jpeg";
 import amenagement6 from "../assets/aménagement_creatif_6.jpeg";
 import amenagement7 from "../assets/aménagement_creatif_7.jpeg";
-import Attijari from "../assets/attijari.png";
 // import bmci1 from "../assets/bmci1.jpeg";
 // import bmci2 from "../assets/bmci2.jpeg";
 // import bmci3 from "../assets/bmci3.jpeg";
@@ -73,6 +72,21 @@ import pandora4 from "../assets/pandora4.jpeg";
 import pandora5 from "../assets/pandora5.jpeg";
 import pandora6 from "../assets/pandora6.jpeg";
 // import image from "../assets/realisation2.jpg";
+import agricole from "../assets/agricole.png";
+import almada from "../assets/almada.png";
+import animationinwi2 from "../assets/animaitoninwi2.jpeg";
+import animationinwi from "../assets/animationinwi.jpeg";
+import bmci from "../assets/bmci.jpeg";
+import goodwe from "../assets/goodwe.jpg";
+import goodwe2 from "../assets/goodwe2.jpg";
+import innovart from "../assets/innovart.jpeg";
+import oncf from "../assets/oncf.png";
+import pandoraLogo from "../assets/Pandora-Logo.png";
+import plvinwi from "../assets/plvinwi.jpeg";
+import plvinwi2 from "../assets/plvinwi2.jpeg";
+import plvinwi3 from "../assets/plvinwi3.jpeg";
+import plvinwi4 from "../assets/plvinwi4.jpeg";
+import plvinwi5 from "../assets/plvinwi5.jpeg";
 import reebok from "../assets/reebok1.jpeg";
 import reebok2 from "../assets/reebok2.jpeg";
 import reebok3 from "../assets/reebok3.jpeg";
@@ -93,12 +107,14 @@ import societe3 from "../assets/sociéte3.jpeg";
 import societe4 from "../assets/sociéte4.jpeg";
 import societe5 from "../assets/sociéte5.jpeg";
 import societe6 from "../assets/sociéte6.jpeg";
+import soge from "../assets/soge.png";
 import anfaplace from "../assets/spelling1.jpeg";
 import anfaplace2 from "../assets/spelling2.jpeg";
 import anfaplace3 from "../assets/spelling3.jpeg";
 import anfaplace4 from "../assets/spelling4.jpeg";
 import anfaplace5 from "../assets/spelling5.jpeg";
 import anfaplace6 from "../assets/spelling6.jpeg";
+import ventec from "../assets/ventec.jpeg";
 
 export type Realisation = {
   id: number;
@@ -148,7 +164,16 @@ export const categories = {
       ],
     },
   ],
-  plv: [],
+  plv: [
+    {
+      id: 1,
+      title: "Inwi Money",
+      description:
+        "Dans le cadre du lancement de Inwi Money, notre équipe a conçu et installé des PLV innovants et attractifs pour promouvoir ce nouveau service auprès des clients. Un grand merci à Inwi pour leur confiance et à notre équipe pour leur créativité et leur professionnalisme dans la réalisation de ce projet.",
+      image: plvinwi,
+      additionalImages: [plvinwi, plvinwi2, plvinwi3, plvinwi4, plvinwi5],
+    },
+  ],
   stands: [
     {
       id: 1,
@@ -212,6 +237,14 @@ export const categories = {
       image: glassauto,
       additionalImages: [glassauto, glassauto2],
     },
+    {
+      id: 7,
+      title: "GOODWE",
+      description:
+        "Nous avons eu le plaisir de participer à la conférence Devoxx Morocco 2024, qui s'est déroulé du 02 au 04 octobre à Marrakech.  En tant que partenaire en branding . Notre équipe Initcom a pris en charge plusieurs aspects essentiels de l'événement, notamment :  La création et mise en place de setup ,la conception et aménagement des stands , la scénographie de l'événement et  la logistique complète.",
+      image: goodwe,
+      additionalImages: [goodwe, goodwe2],
+    },
   ],
   signaletique: [
     {
@@ -234,7 +267,8 @@ export const categories = {
     {
       id: 1,
       title: "ADIDAS - CAMPAGNE PREDATOR",
-      description: "Description of Signalétique 1",
+      description:
+        "Pour le lancement de la nouvelle Adidas Predator, nous avons conçu et installé une Launch Zone immersive en magasin. L’espace met en scène la chaussure iconique dans un univers dynamique et impactant, alliant design et storytelling pour offrir aux clients une expérience engageante et inspirante.",
       image: adidasRetails,
       additionalImages: [
         adidasRetails,
@@ -250,7 +284,7 @@ export const categories = {
       id: 2,
       title: "Pandora",
       description:
-        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées qui marient esthétisme et fonctionnalité.",
+        "Pour Pandora, nous intervenons sur le retail design en concevant et installant des éléments d’habillage et de mise en scène en magasin. De la signalétique aux vitrines en passant par l’intégration d’écrans et de supports visuels, nous transformons l’espace de vente pour offrir une expérience immersive alignée avec l’identité de la marque.",
       image: pandora,
       additionalImages: [
         pandora,
@@ -265,7 +299,7 @@ export const categories = {
       id: 3,
       title: "REEBOK",
       description:
-        "Pour cette nouvelle édition du Carrefour du Manager, nous avons eu le privilège de créer un espace dédié à l’innovation et au partage d’idées. Nous avons conçu et aménagé des stands alliant design et fonctionnalités pour accueillir les participants dans une ambiance dynamique et propice aux échanges professionnels. ",
+        "L’aménagement des espaces de vente est un levier stratégique pour capter l’attention des clients et renforcer l’identité de marque. Pour Reebok, nous avons conçu et installé un habillage de vitrine percutant, alliant visuels dynamiques et intégration digitale, afin de maximiser l’impact en point de vente. En complément, nous avons créé des espaces immersifs, tels que des Launch Zones, conçus pour offrir aux visiteurs une expérience engageante et interactive.",
       image: reebok,
       additionalImages: [
         reebok,
@@ -308,6 +342,16 @@ export const categories = {
         amenagement6,
         amenagement7,
       ],
+    },
+  ],
+  Animations: [
+    {
+      id: 1,
+      title: "Activation Campus – Promotion du forfait flexi 49 DH",
+      description:
+        "Dans le cadre de la campagne de promotion du forfait 49 DH, une opération a été menée dans trois grandes villes universitaires : Casablanca, Mohammedia et Settat. L’objectif était de sensibiliser les étudiants aux avantages de l’offre et d’augmenter les ventes sur place grâce à une approche interactive et engageante , Tout au long de l’opération, une équipe d’animateurs dédiés a permis aux étudiants de découvrir les bénéfices du forfait, tout en leur offrant des goodies exclusifs à l’achat.",
+      image: animationinwi,
+      additionalImages: [animationinwi, animationinwi2],
     },
   ],
 };
@@ -403,11 +447,14 @@ export const partners: TPartners[] = [
   { id: 1, name: "Adidas", logo: AdidasLogo },
   { id: 2, name: "Société Générale", logo: Societe },
   { id: 3, name: "Inwi", logo: Inwi },
-  { id: 4, name: "Attijari", logo: Attijari },
-  { id: 5, name: "CDG", logo: CDG },
-  { id: 6, name: "Adidas", logo: AdidasLogo },
-  { id: 7, name: "Société Générale", logo: Societe },
-  { id: 8, name: "Inwi", logo: Inwi },
-  { id: 9, name: "Inwi", logo: Inwi },
-  { id: 10, name: "CDG", logo: CDG },
+  { id: 4, name: "CDG", logo: CDG },
+  { id: 5, name: "AgriMaroc", logo: agricole },
+  { id: 6, name: "BMCI", logo: bmci },
+  { id: 7, name: "Pandora", logo: pandoraLogo },
+  { id: 8, name: "Fondation AL MADA", logo: almada },
+  { id: 9, name: "CDG", logo: CDG },
+  { id: 10, name: "SOGE", logo: soge },
+  { id: 11, name: "ONCF", logo: oncf },
+  { id: 12, name: "VENTEC", logo: ventec },
+  { id: 13, name: "INNOVART ", logo: innovart },
 ];

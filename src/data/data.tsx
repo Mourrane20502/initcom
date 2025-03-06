@@ -142,9 +142,9 @@ export const categories = {
     },
     {
       id: 2,
-      title: "Société Générale Africa Technologies & Services",
+      title: "SG AT Meet-Up",
       description:
-        "Dans le cadre du SG AT Meet-Up, notre équipe a conçu et installé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services ,ce projet reflète notre engagement à offrir des solutions créatives et personnalisées.",
+        "À l’occasion du SG AT Meet-Up, nous avons réalisé une scénographie élégante et immersive pour Société Générale Africa Technologies & Services. Ce projet illustre notre engagement à proposer des solutions créatives et sur mesure, mettant en valeur l’événement et l’image de la marque.",
       image: sg1,
       additionalImages: [sg1, sg2, sg3, sg4],
     },
@@ -167,9 +167,9 @@ export const categories = {
   plv: [
     {
       id: 1,
-      title: "Inwi Money",
+      title: "PLV et supports de communication pour Inwi",
       description:
-        "Dans le cadre du lancement de Inwi Money, notre équipe a conçu et installé des PLV innovants et attractifs pour promouvoir ce nouveau service auprès des clients. Un grand merci à Inwi pour leur confiance et à notre équipe pour leur créativité et leur professionnalisme dans la réalisation de ce projet.",
+        "Lors des animations d’Inwi, nous mettons en place divers supports de PLV pour assurer une visibilité optimale et renforcer l’impact des campagnes. Qu’il s’agisse de stands (desks), X-banners, roll-ups ou autres dispositifs de signalétique, notre équipe conçoit et installe des solutions adaptées aux besoins de la marque. Grâce à une approche créative et stratégique, nous garantissons une présence marquante sur le terrain, maximisant l’engagement et l’interaction avec le public",
       image: plvinwi,
       additionalImages: [plvinwi, plvinwi2, plvinwi3, plvinwi4, plvinwi5],
     },
@@ -249,16 +249,17 @@ export const categories = {
   signaletique: [
     {
       id: 1,
-      title: "Nouvelle ouverture de magasin",
+      title: "Installation du logo Adidas – Signalétique & Branding",
       description:
-        "Nous avons eu le plaisir de collaborer à l’installation du logo Adidas pour ce nouvel espace. Notre équipe a conçu et mis en place une signalétique et un branding qui reflètent l’identité forte de la marque",
+        "Nous avons eu le plaisir de concevoir et d’installer la signalétique et le branding du logo Adidas dans ce nouvel espace. Une réalisation qui traduit l’identité forte de la marque à travers un design impactant et soigné.Grâce à notre expertise, nous avons créé une mise en scène visuelle qui renforce la présence de Adidas et son univers emblématique.",
       image: signaletique1,
       additionalImages: [signaletique1, signaletique2],
     },
     {
       id: 2,
-      title: "Inwi Money",
-      description: "Description of Signalétique 2",
+      title: "Inwi Money – Une PLV impactante pour un lancement réussi",
+      description:
+        "Pour accompagner le lancement de Inwi Money, nous avons conçu et installé des supports PLV innovants et attractifs, optimisant la visibilité du service en point de vente. Une réalisation qui témoigne de notre engagement à créer des solutions de communication efficaces et percutantes",
       image: inwiMoney,
       additionalImages: [inwiMoney, inwiMoney2, inwiMoney3],
     },

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { ToastContainer } from "react-toastify";
 import AgencyPhoto from "./assets/agency.jpg";
 import LeftSidePicture from "./assets/agencybg.avif";
 import equipe from "./assets/equipe.png";
+import agencyPhoto from "./assets/logoinit.png";
 import RealisationsSection from "./components/RealisationsSection";
 import ServicesSection from "./components/ServicesSection";
 import ValuesSection from "./components/ValuesSection";
@@ -16,6 +18,40 @@ function App() {
   return (
     <div className="overflow-hidden scroll-smooth">
       <Header />
+      <Helmet>
+        <title>InitCom - Votre Allié dans l'Industrie Publicitaire</title>
+        <meta
+          name="description"
+          content="INITCOM est une agence de communication qui évolue au cœur de l’industrie publicitaire. Nous sommes spécialisés dans des domaines clés tels que le marketing événementiel, le marketing opérationnel, le retail marketing, le trade marketing, ainsi que le retail design et le brand design."
+        />
+        <meta
+          name="keywords"
+          content="publicité, marketing événementiel, retail design, brand design, activations publicitaires"
+        />
+        <meta
+          property="og:title"
+          content="InitCom - Votre Allié dans l'Industrie Publicitaire"
+        />
+        <meta
+          property="og:description"
+          content="Initcom est une agence de communication spécialisée dans le marketing événementiel et le retail design. Nous créons des expériences publicitaires impactantes."
+        />
+        <meta property="og:image" content={agencyPhoto} />
+        <meta property="og:url" content="https://www.initcom.ma" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="InitCom - Votre Allié dans l'Industrie Publicitaire"
+        />
+        <meta
+          name="twitter:description"
+          content="Initcom vous accompagne dans vos projets publicitaires avec des solutions créatives et impactantes."
+        />
+        <meta
+          name="twitter:image"
+          content="https://example.com/images/agency.jpg"
+        />
+      </Helmet>
       <section
         className="w-full fromLeft h-[800px] relative bg-cover bg-center"
         style={{

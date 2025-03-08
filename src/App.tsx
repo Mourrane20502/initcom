@@ -26,7 +26,7 @@ function App() {
         />
         <meta
           name="keywords"
-          content="publicité, marketing événementiel, retail design, brand design, activations publicitaires"
+          content="initcom ,Industrie publicitaire - retail & trade marketing- activation opérationnelle- street marketing- Enseignes et panneaux publicitaires- aménagement"
         />
         <meta
           property="og:title"

@@ -646,7 +646,7 @@ function App() {
                 <span className="p-3 rounded-full shadow-md bg-rose-100 text-rose-600">
                   📞
                 </span>
-                <p className="text-lg">+212 695592907</p>
+                <p className="text-lg">+212 662-146566</p>
               </motion.div>
               <motion.div
                 className="flex items-center gap-4"

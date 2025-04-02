@@ -91,7 +91,7 @@ export default function Footer() {
                   Rés Azzaitouna 1er Étage
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-rose-400">📞</span> +212 695592907
+                  <span className="text-rose-400">📞</span> +212 662-146566
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-rose-400">✉️</span> contact@initcom.com
